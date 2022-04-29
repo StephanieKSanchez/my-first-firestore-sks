@@ -16,9 +16,9 @@ const restaurant = {
     rating: 4.9,
     phone: '786-677-2903',
 }
-// db.collection('restaurants').add(restaurant) // database, go to collections & add the restaurant object we created
-// .then(doc => console.log('Created restaurant', doc.id)) // when it's successful, tell me
-// .catch(err => console.error(err)) // otherwise, send me an error message via error named err
+db.collection('restaurants').add(restaurant) // database, go to collections & add the restaurant object we created
+.then(doc => console.log('Created restaurant', doc.id)) // when it's successful, tell me
+.catch(err => console.error(err)) // otherwise, send me an error message via error named err
 
 // example below is adding restaurant2 using async await method rather than .then .catch
 
